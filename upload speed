@@ -1,0 +1,6 @@
+import speedtest 
+st = speedtest.Speedtest()
+while True:
+    print(st.upload())
+    if st.upload() < 500000.0:
+        print("get a better connection")
